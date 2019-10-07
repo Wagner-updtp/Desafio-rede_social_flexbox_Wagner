@@ -1,53 +1,60 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
+  
+body {
+        background-color: #f2f2f2;
+    font-family: 'Raleway', sans-serif;;
 }
 
-html {
-    background-color: #f2f2f2;
-}
-
-
-main {
+.container {
+    border: 1px solid #cccc;
+    width: 100%;
     display: flex;
-    border: 1px solid #ccc;
-    margin: 150px 217px;
-    font-family: 'Raleway', sans-serif;
-    display: flex;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     justify-content: center;
+    align-items: center;
+    margin-left: 1;
+    margin-right: 1;
 }
 
-div.bloco {
-    width: 35vw;
-    height: 250px;
-    margin: 2%;
+/* Controla  */
+.bloco {
     background-color: #fff;
     border: 1px solid #aaa;
+    padding: 10px;
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 35%;
+    margin: 1%;
+    
+
+    /* margin: 30px 0; */
+    /* width: 600px;
+    justify-content: space-around; */
     }
 
-div.imagens {
+   
+.imagens {
+    width: 30%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-sizing: border-box;
+   
 }
 
-div.paragrafo {
+.paragrafo {
+    background-color: #fff;
     width: 380px;
     height: 100px;
     margin: 3px 3px;
-    background-color: #fff;
     border: none;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-div.conteudo {
+.conteudo {
     width: 400px;
     height: 250px;
     display: flex;
@@ -55,29 +62,41 @@ div.conteudo {
     justify-content: space-around;
 }
 
-p.alinhamento {
+.alinhamento {
     text-align: left;
 }
 
-div.conteudo h1 {
+.conteudo h2 {
+    width: 70%;
     margin-top: 30px;
 }
 
-img.foto_usuario {
-    width: 150px;
+.foto_usuario {
+    /* width: 150px; */
+    justify-content: flex-start;
+    margin: 10 10;
+    max-width: 150px;
+    width: 100%;
+    display: flex;
 }
 
-img.icone_rede_social {
-    position: relative;
+.rede_social {
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+.icone_rede_social {
+    display: flex;
     top: 17px;
     width: 30px;
+    justify-content: space-around;
     
 }
-
-div button {
+.botao {
     color: #fff;
     background-color: #888888;
     text-transform: uppercase;
+    border: none;
     border-style: none;
     width: 100px;
     padding: 10px 15px;
